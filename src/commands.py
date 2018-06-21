@@ -38,4 +38,4 @@ def registerCommands(bot):
                 \r:white_small_square:   [**Teams**](https://github.com/CodersClashS01/Docs/tree/master/teams)
                 \r:white_small_square:   [**Requested Dependencies**](https://github.com/CodersClashS01/Docs/blob/master/stuff/requested-dependencies.md)
                 """,
-            color = c.CLR.DEF ))
+            color = consts.CLR.DEF ))
