@@ -5,7 +5,12 @@ from discord.ext import commands
 import consts
 import commands as cmds
 import events
+import sys
 
+
+if len(sys.argv) < 2:
+    print("Please pass the bots token as first argument!")
+    exit(-1)
 
 global CCROLE
 
@@ -16,4 +21,4 @@ bot = commands.Bot(
 events.registerEvents(bot)
 cmds.registerCommands(bot)
 
-bot.run(os.environ[consts.TOKENENV])
+bot.run(sys.argv[1])

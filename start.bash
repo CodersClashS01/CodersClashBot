@@ -10,10 +10,10 @@ then
     pyexec="py"
 fi
 
-if [ -z $DEVBOTTOKEN ]
+if [ -z $1 ]
 then
-    echo "Please set the bots token as envoirement variable 'CCBOTTOKEN'!"
+    echo "Please set the bots token as first arguemtn of this script!"
     exit -1
 fi
 
-$pyexec src/main.py
+$pyexec src/main.py $1
