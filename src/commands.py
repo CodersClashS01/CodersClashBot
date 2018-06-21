@@ -9,7 +9,7 @@ def registerCommands(bot):
 
     @bot.command(
         pass_context = True, 
-        alias = ["r"],
+        aliases = ["r"],
         name = "role",
         help = "Add or remove CodersClash-Notify role")
     async def role(ctx):
@@ -50,7 +50,7 @@ def registerCommands(bot):
 
     @bot.command(
         pass_context = True,
-        alias = ["org", "githuborg"],
+        aliases = ["org", "githuborg"],
         name = "orginv",
         help = "Sends an mesage to zekro to invite you to the CodersClash organization")
     async def orginv(ctx, *args : str):
