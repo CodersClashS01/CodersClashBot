@@ -22,8 +22,8 @@ def registerCommands(bot):
             await bot.add_roles(msg.author, ccrole)
 
         await bot.say(embed=discord.Embed(
-            description = "%s role <@&%s>." % (statusstr, c.CCROLEID),
-            color = c.CLR.DEF ))
+            description = "%s role <@&%s>." % (statusstr, consts.CCROLEID),
+            color = consts.CLR.DEF ))
 
     @bot.command(
         pass_context = True, 
