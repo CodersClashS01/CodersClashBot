@@ -11,7 +11,7 @@ def registerCommands(bot):
         help = "Add or remove CodersClash-Notify role")
     async def role(ctx):
         msg = ctx.message
-        ccrole = [r for r in msg.server.roles if r.id == c.CCROLEID][0]
+        ccrole = [r for r in msg.server.roles if r.id == consts.CCROLEID][0]
         statusstr = ""
 
         if ccrole in msg.author.roles:
