@@ -9,6 +9,5 @@ def registerEvents(bot):
     async def on_ready():
         print("Logged in\nRunning on %d servers.\n\n" 
                 % len(bot.servers))
-        bot.change_presence(
-            status = discord.Status.online,
+        await bot.change_presence(
             game = discord.Game(name = consts.PREFIX + "help | codersclash.de"))
